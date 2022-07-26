@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "dgSpecHash": "xT3v1Ua548jucrXyVmQ7ENsdd6l1x52+jCy3jJt/khFOgcCOJUYa3+sdlRPj7LvfgEsUF+WCtzQEEorJf9/iKQ==",
+  "success": false,
+  "projectFilePath": "C:\\Users\\reldo\\OneDrive\\Desktop\\Hello\\sdk_labo1_4\\514sdk_labo1_4\\SDKLaboratoire1.csproj",
+  "expectedPackageFiles": [],
+  "logs": [
+    {
+      "code": "NU1105",
+      "level": "Error",
+      "message": "Unable to find project information for 'C:\\Users\\reldo\\OneDrive\\Desktop\\Hello\\sdk_labo1_4\\LibrairieConversionNote\\LibrairieConversionNote.csproj'. If you are using Visual Studio, this may be because the project is unloaded or not part of the current solution so run a restore from the command-line. Otherwise, the project file may be invalid or missing targets required for restore.",
+      "libraryId": "C:\\Users\\reldo\\OneDrive\\Desktop\\Hello\\sdk_labo1_4\\LibrairieConversionNote\\LibrairieConversionNote.csproj",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
+}
