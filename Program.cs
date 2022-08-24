@@ -1,6 +1,10 @@
-﻿//On roule l'application non-stop, tant que CTRL+C
+//Imporation de la librairie
 using LibrairieConversionNote;
 
+//Création nouvel objet de notre librairie
+Conversion conversionObj = new Conversion();
+
+//On roule l'application non-stop, tant que CTRL+C
 while (true)
 {
     Console.Write("Type de conversion à faire : ");
@@ -14,13 +18,22 @@ while (true)
         {
             Console.Write("Conversion à faire : ");
             var note = Console.ReadLine();
-
-            ConversionAlphabetiqueToNote conversion = new ConversionAlphabetiqueToNote();
-
-
-            string noteRetour = conversion.Transformer(note);
+            var noteRetour = conversionObj.AlphaToNote(note);
+            Console.Write(noteRetour);
+            Console.WriteLine();
+        }
+    }
+    //Si l'utilisateur tape alpha
+    else if (input?.ToUpperInvariant() == "ALPHA")
+    {
+        while (true)
+        {
+            Console.Write("Conversion à faire : ");
+            var note = Console.ReadLine();
+            var noteRetour = conversionObj.NoteToAlpha(note); //Mettre votre appel ici;
             Console.Write(noteRetour);
             Console.WriteLine();
         }
     }
 }
+// Push sans aucun changement
